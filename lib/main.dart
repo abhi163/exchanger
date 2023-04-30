@@ -1,3 +1,4 @@
+import 'package:exchanger/screens/tabs_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
@@ -21,6 +22,9 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return MaterialApp(
+      theme: theme,
+      home: const TabsScreen(),
+    );
   }
 }
